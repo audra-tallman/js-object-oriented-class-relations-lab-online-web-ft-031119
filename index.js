@@ -10,14 +10,3 @@ class Driver{
   this.name = name; 
   store.drivers.push(this);
 }
-setDriver(driver) {
-  this.driverId = driver.id;
-}
-driver() {
-  return store.drivers.find(
-    function(driver) {
-      return driver.id  === this.driverId;
-    }.bind(this)
-    );
-  } 
-}

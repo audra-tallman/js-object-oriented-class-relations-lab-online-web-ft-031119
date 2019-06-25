@@ -9,7 +9,7 @@ class Driver{
   store.drivers.push(this);
 }
 setDriver(driver) {
-  this.driverID = driver.id;
+  this.driverId = driver.id;
 }
 driver() {
   return store.drivers.find(

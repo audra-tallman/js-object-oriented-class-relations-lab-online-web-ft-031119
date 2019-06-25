@@ -23,19 +23,19 @@ class Driver{
 }
 
 class Passenger {
-  constructor(name)
+  constructor(name) {
   this.id = ++passengerId; 
   this.name = name; 
-  store.passengers.push(this;)
+  store.passengers.push(this);
 }
  trips() {
     return store.trips.filter(trip => {
       return trip.passengerId == this.id;
     });
   }
-   passengers() {
+   drivers() {
     return this.trips().map(trip => {
-      return trip.passenger();
+      return trip.driver();
     });
   }
  }

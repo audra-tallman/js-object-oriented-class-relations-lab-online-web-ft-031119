@@ -11,3 +11,9 @@ class Driver{
 setDriver(driver) {
   this.driverID = driver.id;
 }
+driver() {
+  return store.drivers.find(
+    function(driver) {
+      return driver.id  === this.driverID
+    })
+}

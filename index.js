@@ -8,9 +8,6 @@ class Driver{
   constructor(name) {
   this.id = ++driverId;
   this.name = name; 
-  if (passenger) {
-    this.passengerId = passenger.id;
-  }
   store.drivers.push(this);
 }
 setDriver(driver) {

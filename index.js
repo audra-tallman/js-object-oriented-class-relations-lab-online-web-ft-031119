@@ -32,4 +32,10 @@ class Passenger {
     return store.trips.filter(trip => {
       return trip.passengerId == this.id;
     });
-}
+  }
+   passengers() {
+    return this.trips().map(trip => {
+      return trip.passenger();
+    });
+  }
+ }

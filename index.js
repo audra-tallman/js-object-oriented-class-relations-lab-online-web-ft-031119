@@ -1,3 +1,5 @@
+let store = 
+
 class Driver{
   constructor(name, trip, passenger) {
   this.id = ++driverId;

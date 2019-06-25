@@ -8,3 +8,7 @@ class Driver{
   }
   store.drivers.push(this);
 }
+setDriver(driver) {
+  this.driverID = driver.id;
+  
+}

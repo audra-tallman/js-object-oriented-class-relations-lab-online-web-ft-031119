@@ -10,5 +10,4 @@ class Driver{
 }
 setDriver(driver) {
   this.driverID = driver.id;
-  
 }
